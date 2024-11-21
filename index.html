@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Online: Public Speaking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-yellow-300">
+    <!-- Navbar -->
+    <nav class="bg-black text-white">
+        <div class="container mx-auto flex items-center justify-between py-6 px-7">
+            <a href="#" class="text-lg font-bold">Seminar Online</a>
+            <ul class="flex space-x-6">
+                <li><a href="#deskripsi" class="hover:text-yellow-300">Deskripsi</a></li>
+                <li><a href="#pembicara" class="hover:text-yellow-300">Pembicara</a></li>
+                <li><a href="#pendaftaran" class="hover:text-yellow-300">Pendaftaran</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-[60vh] text-black flex items-center justify-center text-center" style="background-image: url('hero-bg.jpg');">
+        <div>
+            <h1 class="text-4xl font-bold mb-4">Jadilah Pembicara Hebat</h1>
+            <p class="text-lg mb-6">Meningkatkan Kepercayaan Diri dan Menginspirasi Audiens Anda</p>
+            <a href="#pendaftaran" class="bg-yellow-950 text-white py-3 px-6 rounded-lg hover:bg-blue-300">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Deskripsi -->
+    <section id="deskripsi" class="py-16 background-color=">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Deskripsi Seminar</h2>
+            <p class="text-white mb-6">
+                Seminar ini dirancang khusus untuk Anda yang ingin mengasah kemampuan berbicara di depan umum, meningkatkan kepercayaan diri, dan menyampaikan pesan dengan efektif. Dalam dunia yang semakin terhubung, kemampuan public speaking adalah kunci untuk membangun hubungan, memengaruhi orang lain, dan membuka peluang baru. Bersama Najwa Shihab dan Merry Riana, mari menjadi Speaker!
+            </p>
+            <ul class="text-left mx-auto list-disc list-inside max-w-md">
+                <li>✔ Teknik Membangun Kepercayaan Diri</li>
+                <li>✔ Tips Berkomunikasi dengan Efektif</li>
+                <li>✔ Cara Mengatasi Rasa Gugup</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pembicara -->
+    <section id="pembicara" class="py-16 bg-yellow-300">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Pembicara</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="text-center">
+                    <img src="img/najwasihab.jpg" alt="Najwa Shihab" class="w-36 h-36 mx-auto rounded-full mb-4">
+                    <h5 class="text-lg font-semibold">Najwa Shihab</h5>
+                    <p class="text-black">Presenter</p>
+                </div>
+                <div class="text-center">
+                    <img src="img/merryriana.jpg" alt="Merry Riana" class="w-36 h-36 mx-auto rounded-full mb-4">
+                    <h5 class="text-lg font-semibold">Merry Riana</h5>
+                    <p class="text-black">Motivator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendaftaran -->
+    <section id="pendaftaran" class="py-16 bg-yellow">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Formulir Pendaftaran</h2>
+            <form id="form-daftar" class="max-w-lg mx-auto" onsubmit="submitForm(event)">
+                <div class="mb-4">
+                    <label for="nama" class="block text-left font-medium text-gray-700 mb-2">Nama:</label>
+                    <input type="text" id="nama" name="nama" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-medium text-gray-700 mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-400" required>
+                </div>
+                <button type="submit" class="w-full bg-yellow-400 text-gray-800 py-3 rounded-lg hover:bg-yellow-500">Daftar Sekarang</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>Kontak: seminar@publicspeaking.com | Telp: 0812-3456-7890</p>
+            <p>&copy; 2024 Seminar Online Public Speaking. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Mencegah pengiriman form ke server
+            alert("Pendaftaran berhasil! Terima kasih telah mendaftar.");
+        }
+    </script>
+</body>
+</html>
